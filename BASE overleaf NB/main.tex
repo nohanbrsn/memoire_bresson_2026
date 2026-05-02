@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{report}
+
+%----------------- PACKAGES -----------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{tocloft}
+%----------------- STYLE DES PARTIES -----------------
+
+\renewcommand{\thepart}{\Roman{part}} % I, II, III
+
+\titleformat{\part}[display]
+  {\centering\Huge\bfseries}
+  {Partie \thepart}
+  {1em}
+  {}
+
+\titlespacing*{\part}{0pt}{0pt}{30pt}
+
+\setlength{\headheight}{14.5pt}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{15pt}
+
+\captionsetup[figure]{labelformat=empty}
+\geometry{margin=2.5cm}
+\setstretch{1.2}%
+
+
+%----------------- PAGE DE COUVERTURE -----------------
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{0.8cm}
+    
+    {\Huge \textbf{
+    \parbox{0.9\textwidth}{
+    \centering
+    Utilisation de synthétiseurs d’ambiances naturelles\\
+    dans la construction d’une bande son de film :\\
+    l’exemple du vent
+    }
+    }}
+    \\[2cm]
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{Images/logo LL.png}
+    \end{figure}
+    {\Large Mémoire de Master}\\[0.5cm]
+    {\Large Promotion 2026}\\[0.5cm]
+     {\Large Nohan Bresson} \\[2cm]
+    
+    \vfill
+    
+    \begin{flushleft}
+    {\Large\textbf{Directeur de mémoire :} Antoine Martin} \\[0.3cm]
+    {\Large\textbf{Coordinateur de mémoire :} Corsin Vogel} \\[0.3cm]
+    \end{flushleft}
+    
+    \vfill
+\end{titlepage}
+
+%----------------- TABLE DES MATIÈRES -----------------
+\tableofcontents
+\clearpage
+
+%----------------- INTRODUCTION -----------------
+\part{État de l’art}
+
+\chapter{Le vent au cinéma}
+\section{Historique}
+\section{Définitions et sémantique}
+\subsection{D'un point de vue général}
+\subsection{D'un point de vue scientifique}
+\subsection{Du point de vue des professionnels du son}
+\chapter{Les outils existants}
+\section{Les synthétiseurs d’ambiances naturelles existants}
+\section{Les différents types de synthèses}
+\subsection{Synthèse additive et soustractive}
+\subsection{Synthèse granulaire}
+\subsection{Synthèse par modélisation physique}
+\section{Audio procédural}
+\section{Protocoles de contrôle}
+\subsection{Le MIDI}
+\subsection{L’OSC}
+\subsection{Divers autres}
+
+%-----------------
+
+\part{Cahier des charges}
+
+\chapter{Entretiens avec des professionnels}
+\chapter{Établissement du cahier des charges}
+
+%-----------------
+
+\part{Conception du synthétiseur}
+
+\chapter{Techniques utilisées}
+\section{Synthèse granulaire}
+\subsection{Vent "pur"}
+\subsection{Éléments additionnels}
+
+% etc...
+
+
+%----------------- FIN DU RAPPORT -----------------
+\end{document}
