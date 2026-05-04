@@ -1,4 +1,4 @@
-# LaTeX compilation files
+# ----------------- LaTeX -----------------
 *.aux
 *.log
 *.toc
@@ -10,13 +10,18 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
 
-# PDF généré (optionnel mais conseillé)
-main.pdf
+# PDF compilé
+*.pdf
 
-# OS files
+# ----------------- OS -----------------
 .DS_Store
 Thumbs.db
 
-# Editor
+# ----------------- Editor -----------------
 .vscode/
